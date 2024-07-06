@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: #fdd835;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+    footer{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#fdd835; 
+    text-align: center; 
+    padding: 10px 0; 
+    flex-direction: column;
+}
+.main{
+  background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0); 
+    overflow: hidden;
+    position: relative;
+    border-width:3px ;
+    border-color: black;
+    padding: 10px;;
+}
+.main-image {
+    width: 100%;
+    height: 150px; 
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    border:3px black ;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(214, 150, 23, 0.537);
+}
+.category{
+  background-color:rgb(232, 200, 41) ;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+h5{
+  color: rgb(94, 90, 90);
+ 
+}
+.card-content {
+    padding: 20px;
+}
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000000c4;
+    text-shadow: #000000;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.author-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.min{
+  color: gray;
+}
+  </style>
+</head>
+<body>
+<div class="main">
+  <div class="main-image"><img src="C:\Users\qdm\Downloads\blog-preview-card-main\blog-preview-card-main\design\img.png" >
+  </div>
+  <div class="card-content">
+    <span class="category">Learning</span>
+    <h5>Published 21 Dec 2023</h5>
+    <h2>HTML & CSS foundations</h2>
+    <p class="min">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <div class="author">
+        <img src="C:\Users\qdm\Downloads\blog-preview-card-main\blog-preview-card-main\assets\images\image-avatar.webp" alt="Author Image" class="author-image">
+        <p>Greg Hooper</p>
+    </div>
+</div>
+</div>
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Ywissam">Ywissam</a>.
+  </div>
+</footer>
+</body>
+</html>
